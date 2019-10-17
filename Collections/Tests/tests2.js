@@ -119,9 +119,4 @@ describe("Tests for LibkedList", function () {
       assert.deepEqual(ArrayList, LinkedList.toArrayList());
     });
   });
-  describe("Tests for function sort", function () {
-    it("is arg  function?", function () {
-      assert.deepEqual(false, LinkedList.sort(323));
-    });
-  });
 });

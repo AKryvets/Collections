@@ -113,6 +113,11 @@ const ArrayList = {
       LinkedList.push(ArrayList.pop());
     }
     return LinkedList;
+  },
+  get: function (index) {
+    if (index >= this.length || index < 0)
+      return false;
+    return this.List[index];
   }
 }
 

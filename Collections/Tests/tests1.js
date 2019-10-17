@@ -191,4 +191,33 @@ describe("ArrayList ", function () {
             assert.deepEqual(LinkedList, ArrayList.toLinkedList());
         });
     });
+    describe("Tests for function get", function () {
+        it("get one arg = index of element and return this element", function () {
+            ArrayList.clear();
+            ArrayList.push(2)
+            ArrayList.push(60)
+            ArrayList.push(500)
+            ArrayList.push(70)
+            ArrayList.push(8)
+            assert.deepEqual(60, ArrayList.get(1));
+        });
+        it("get one arg = index of element(an elemenet is from outside the borders) and return this element", function () {
+            ArrayList.clear();
+            ArrayList.push(2)
+            ArrayList.push(60)
+            ArrayList.push(500)
+            ArrayList.push(70)
+            ArrayList.push(8)
+            assert.deepEqual(false, ArrayList.get(10));
+        });
+        it("get one arg = index of element(an elemenet is from outside the borders(is negative)) and return this element", function () {
+            ArrayList.clear();
+            ArrayList.push(2)
+            ArrayList.push(60)
+            ArrayList.push(500)
+            ArrayList.push(70)
+            ArrayList.push(8)
+            assert.deepEqual(false, ArrayList.get(-5));
+        });
+    });
 });
