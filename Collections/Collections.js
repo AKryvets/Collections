@@ -193,7 +193,7 @@ LinkedList.toString = function () {
       return a.toLinkedList();
     } else {
       let a = LinkedList.toArrayList();
-      s.sort();
+      a.sort();
       return a.toLinkedList();
     }
   },
