@@ -194,7 +194,7 @@ LinkedList.toString = function () {
       if (typeof commit != "function")
         return false;
       let a = LinkedList.toArrayList();
-      a.sort();
+      a.sort(commit);
       return a.toLinkedList();
     } else {
       let a = LinkedList.toArrayList();
